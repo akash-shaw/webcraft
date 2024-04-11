@@ -20,12 +20,12 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 header{
     width: 100%;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,21 +33,35 @@ header{
     align-items: center;
 }
 .main-cnt{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
+    flex-direction: column;
+    /* min-width: auto; */
     max-width: 60vw;
     justify-content: center;
     align-items: start;
 }
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.bottom{
+    /* border: 2px solid blue; */
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .text-cnt{
     height: 100%;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* font-size: 2rem; */
 }
 .black-txt{
     font-size: 3.5rem;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     color: var(--black);
     margin: 10px 0px 30px 0px;
     /* letter-spacing: 0.05cap; */
@@ -57,36 +71,47 @@ header{
     
 }
 .grey-txt{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     color: var(--text-grey);
     font-size: 2rem;
 }
-.ico-cnt{
+/* .ico-cnt{
     margin-top: 60px;
     display: flex;
-    width: 60vw;
+    min-width: 60vw;
     justify-content: space-between;
-}
+} */
 .four-ico{
+    /* border: 2px solid red; */
     display: flex;
 }
 .main-ico-cnt{
-    border: 2px solid blue;
-    width: auto;
-    margin: 0 50px 0 0;
+    /* border: 2px solid blue; */
+    /* width: auto; */
     /* height: 100px; */
     display: flex;
     /* align-items: center; */
-    /* padding: 5px; */
+    padding: 5px;
+    /* margin: 0 20px 0 20px; */
+}
+.ico1{
+    margin-right: 20px;
+}
+.ico2 .ico3{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ico4{
+    margin-left: 20px;
 }
 .main-ico-cnt i{
     font-size: 1.5rem;
     color: var(--text-grey);
     margin-right: 15px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .numtxt{
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -104,19 +129,137 @@ header{
     margin-top: 10px;
 }
 .gh-logo{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 .gh-logo i{
     font-size: 3rem;
     color: var(--logo-grey);
 }
 
-
 footer{
     width: 100%;
     height: 20px;
     background-color: var(--orange);
+}
+
+@media only screen and (max-width: 1300px){
+    .main-cnt{
+        max-width: 70vw;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .main-cnt{
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .gh-logo{
+        display: none;
+    }
+    .four-ico{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    body{
+        min-height: 100vh;
+        height: fit-content;
+        /* border: 10px solid red; */
+        overflow-x: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    header{
+        margin-top: 50px;
+    }
+    .top{
+        flex-direction: column-reverse;
+
+    }
+    .pp-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        margin-top: 50px;
+        min-height: 80vh;
+    }
+    .main-cnt{
+        height: fit-content;
+    }
+    .pp-img img{
+        height: 20vw;
+    }
+    .black-txt{
+        font-size: 1.9rem;
+    }
+    .grey-txt{
+        font-size: 1.5rem;
+    }
+    .main-ico-cnt i{
+        font-size: 1.5rem;
+    }
+    .num{
+        font-size: 1.9rem;
+    }
+    .txt{
+        font-size: 1.5rem;
+    }
+    .four-ico{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .main-ico-cnt{
+        margin: 0;
+        width: 45%;
+    }
+    .ico1 .ico2 .ico3 .ico4{
+        margin: 0;
+        width: 500px;
+    }
+    .bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .gh-logo{
+        margin: 50px 0 0 0;
+        display: flex;
+        /* margin: 0; */
+    }
+    .gh-logo i{
+        /* margin-top: 200px; */
+    }
+}
+@media only screen and (max-width: 600px){
+    .pp-img img{
+        height: 30vw;
+    }
+    .black-txt{
+        font-size: 1.5rem;
+    }
+    .grey-txt{
+        font-size: 1rem;
+    }
+    .main-ico-cnt i{
+        font-size: 1.5rem;
+    }
+    .num{
+        font-size: 1.5rem;
+    }
+    .txt{
+        font-size: 1rem;
+    }
 }
