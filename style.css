@@ -5,11 +5,8 @@
 } 
 :root{
     --black: #1f2328;
-    --border-grey: #d0d7de;
-    --background-grey: #f6f8fa;
     --text-grey: #636c76;
     --logo-grey: #8994af;
-    --hover-grey: #eff1f4;
     --orange: #e44c27;
 }
 body{
