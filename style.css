@@ -20,12 +20,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
 header{
     width: 100%;
-    /* border: 2px solid blue; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -33,10 +31,8 @@ header{
     align-items: center;
 }
 .main-cnt{
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    /* min-width: auto; */
     max-width: 60vw;
     justify-content: center;
     align-items: start;
@@ -47,7 +43,6 @@ header{
     width: 100%;
 }
 .bottom{
-    /* border: 2px solid blue; */
     margin-top: 60px;
     width: 100%;
     display: flex;
@@ -56,43 +51,26 @@ header{
 .text-cnt{
     height: 100%;
     width: 100%;
-    /* border: 2px solid black; */
-    /* font-size: 2rem; */
 }
 .black-txt{
     font-size: 3.5rem;
-    /* border: 2px solid green; */
     color: var(--black);
     margin: 10px 0px 30px 0px;
-    /* letter-spacing: 0.05cap; */
 }
 .black-txt span{
     font-weight: 650;
     
 }
 .grey-txt{
-    /* border: 2px solid purple; */
     color: var(--text-grey);
     font-size: 2rem;
 }
-/* .ico-cnt{
-    margin-top: 60px;
-    display: flex;
-    min-width: 60vw;
-    justify-content: space-between;
-} */
 .four-ico{
-    /* border: 2px solid red; */
     display: flex;
 }
 .main-ico-cnt{
-    /* border: 2px solid blue; */
-    /* width: auto; */
-    /* height: 100px; */
     display: flex;
-    /* align-items: center; */
     padding: 5px;
-    /* margin: 0 20px 0 20px; */
 }
 .ico1{
     margin-right: 20px;
@@ -108,10 +86,8 @@ header{
     font-size: 1.5rem;
     color: var(--text-grey);
     margin-right: 15px;
-    /* border: 1px solid red; */
 }
 .numtxt{
-    /* border: 1px solid yellowgreen; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -125,11 +101,9 @@ header{
     font-size: 1.5rem;
     color: var(--text-grey);
     font-weight: 400;
-    /* letter-spacing: 0.05cap; */
     margin-top: 10px;
 }
 .gh-logo{
-    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,7 +146,6 @@ footer{
     body{
         min-height: 100vh;
         height: fit-content;
-        /* border: 10px solid red; */
         overflow-x: hidden;
         display: flex;
         justify-content: space-between;
@@ -237,10 +210,8 @@ footer{
     .gh-logo{
         margin: 50px 0 0 0;
         display: flex;
-        /* margin: 0; */
     }
     .gh-logo i{
-        /* margin-top: 200px; */
     }
 }
 @media only screen and (max-width: 600px){
