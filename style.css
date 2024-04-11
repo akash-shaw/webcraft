@@ -71,16 +71,7 @@ header{
 .main-ico-cnt{
     display: flex;
     padding: 5px;
-}
-.ico1{
-    margin-right: 20px;
-}
-.ico2 .ico3{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.ico4{
-    margin-left: 20px;
+    margin-right: 40px;
 }
 .main-ico-cnt i{
     font-size: 1.5rem;
@@ -182,6 +173,7 @@ footer{
     }
     .main-ico-cnt i{
         font-size: 1.5rem;
+        /* margin: 0; */
     }
     .num{
         font-size: 1.9rem;
@@ -196,10 +188,6 @@ footer{
     .main-ico-cnt{
         margin: 0;
         width: 45%;
-    }
-    .ico1 .ico2 .ico3 .ico4{
-        margin: 0;
-        width: 500px;
     }
     .bottom{
         flex-direction: column;
